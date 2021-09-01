@@ -6,16 +6,23 @@
     <link rel="stylesheet" href="/app.ed7d1cf1.css">
     <title>About Page</title>
   </head>
-  <body>
+  <body class="is-loading" data-barba="wrapper">
     <ul class="nav">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/contact.html">Contact</a></li>
     </ul>
   
-    <div id="container"></div>
-    <main data-router-wrapper="">
-      <article data-router-view="about">
+    <div class="canvas">
+      <div id="container">
+        
+      </div>
+      </div>
+    <main id="main" data-barba="container" data-barba-namespace="about">
+      <!-- <div class="canvas">
+        <div id="container"></div>
+      </div> -->
+      <article>
         <h1>About page</h1>
       </article>
     </main>

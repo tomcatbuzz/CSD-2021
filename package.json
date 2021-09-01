@@ -1,8 +1,9 @@
 {
   "dependencies": {
-    "@dogstudio/highway": "^2.2.1",
+    "@barba/core": "^2.9.7",
+    "dat.gui": "^0.7.7",
     "gsap": "npm:@gsap/shockingly@^3.5.1",
-    "load-asset": "^1.2.0",
+    "imagesloaded": "^4.1.4",
     "three": "^0.124.0",
     "three-orbit-controls": "^82.1.0"
   },

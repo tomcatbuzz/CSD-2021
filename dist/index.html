@@ -6,19 +6,71 @@
   <link rel="stylesheet" href="/app.ed7d1cf1.css">
   <title>Home Page</title>
 <script src="/app.ed7d1cf1.js"></script></head>
-<body>
+<body class="is-loading" data-barba="wrapper">
+
+  <!-- this will scale up -->
+  <div class="loader">
+    <div class="loader__mask">
+      <div class="inner">
+        <div class="progress"></div>
+      </div> 
+    </div>
+  </div>
+  
+  <!-- this will be animated on top of the dark background -->
+  <div class="loader__content">
+    <div class="inner">
+      <div class="loader__title">
+        <div class="loader__title--mask"><span>Anything </span></div>
+        <div class="loader__title--mask"><span>Is Possible</span></div>
+      </div>
+      <div class="loader__image">
+        <div class="loader__image--mask">
+          <img src="https://d2jix09m8r65fg.cloudfront.net/JoesIMGRev.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="loader">
+    <div class="txt">
+        <p class="txt-perc">0%</p>
+        <div class="progress"><span></span></div>
+    </div>
+  </div>  
+
+  <div class="swipe swipe1"></div>
+  <div class="swipe swipe2"></div>
+  <div class="swipe swipe3"></div> -->
+
   <ul class="nav">
     <li><a href="/index.html">Home</a></li>
     <li><a href="/about.html">About</a></li>
     <li><a href="/contact.html">Contact</a></li>
   </ul>
+  <div class="canvas">
+  <div id="container">
+    
+  </div>
+  </div>
 
-  <div id="container"></div>
-  <main data-router-wrapper="">
-    <article data-router-view="home">
+  <main id="main" data-barba="container" data-barba-namespace="home">
+    <article class="content">
       <h1>Home page</h1>
+        <!-- <div class="slider">
+          <h2 class="slider_content">
+            Slider tagline biathces
+          </h2>
+        </div> -->
     </article>
+      <div class="slider">
+        <h2 class="slider_content">
+          Slider tagline biathces
+        </h2>
+      </div>
   </main>
+<!-- </div>
+</div> -->
   <script src="/app.c3f9f951.js"></script>
 </body>
 </html>

@@ -3,9 +3,7 @@ import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 gsap.registerPlugin(SplitText);
 
-
-
-import A from './canvas/app.js';
+import A from './canvas/app';
 
 let sketch = new A();
 
@@ -17,7 +15,8 @@ export default class Fade extends Highway.Transition {
     console.log('OUT', from);
     const tl = gsap.timeline({
       defaults: {
-        duration: 0.5,
+        // duration: 0.5,
+        duration: 1,
         ease: 'power1.inOut'
       },
       onComplete: done
@@ -30,7 +29,7 @@ export default class Fade extends Highway.Transition {
   in({from, to, done}) {
     let goto = to.getAttribute('data-router-view');
     sketch.goto(goto);
-    console.log(sketch);
+    console.log(sketch, 'this is Sketch');
     const split = new SplitText('h1', {type:'chars'});
 	  animation.from(split.chars, {opacity:0, y:50, ease:'back(4)', stagger:{
 		from:'end',
@@ -40,7 +39,8 @@ export default class Fade extends Highway.Transition {
     console.log('IN', from, to);
     const tl = gsap.timeline({
       defaults: {
-        duration: 0.5,
+        // duration: 0.5,
+        duration: 1,
         ease: 'power1.inOut'
       },
       onComplete: done
